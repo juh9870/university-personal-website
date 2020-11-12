@@ -1,0 +1,25 @@
+.box {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+}
+
+.box1 {
+    background: dimgrey;
+    color: whitesmoke;
+}
+
+.box div {
+    font-size: 25pt;
+}
+.box p {
+    font-size: 7pt;
+}
+
+.box2 {
+    background: yellowgreen;
+}
+
+.box3 {
+    background: cadetblue;
+}

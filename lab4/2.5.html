@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		.box {
+			box-sizing: border-box;
+			width: 100px;
+			height: 150px;
+			border-left: 10px dotted #D0D0FF;
+			margin-right: 10px;
+			padding: 10px;
+			font-size: 40px;
+			background: #eeeff2;
+			font-family: Arial;
+			display: inline-block;
+		}
+		.box:hover {
+			background: yellow;
+			color: goldenrod;
+			cursor: pointer;
+		}
+		.container {
+			white-space: nowrap;
+		}
+		.float {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="box">A</div>
+		<div class="box">B</div>
+		<div class="box">C</div>
+		<div class="box">D</div>
+		<div class="box">E</div>
+	</div>
+	<div class="float">
+		<div class="box">F</div>
+	</div>
+</body>
+</html>

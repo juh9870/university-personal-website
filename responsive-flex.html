@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+		/*прибираємо стандартний margins у сторінки*/
+		body {
+			margin: 0;
+		}
+		nav {
+            background: lightskyblue;
+			height: 75px;
+		}
+		header {
+            background: url("img/bgh.jpg");
+			height: 400px;
+		}
+		.main {
+			margin: 75px 100px;
+			height: 500px;
+			background: gray;
+			/*Оскільки цей єлемент ає висоту 500 але містить єлементів на сумарну висоту 675 то створюемо скроллбар*/
+			overflow-y: auto;
+		}
+		.pre-footer {
+			background: silver;
+			height: 40px;
+		}
+		footer{
+			height: 100px;
+			background: black;
+		}
+		.p-yellow {
+			height: 200px;
+			background: khaki;
+			margin-bottom: 75px;
+			margin-top: 0;
+		}
+		.row {
+			display: flex;
+			justify-content: space-between;
+		}
+		.valve-orange-box{
+			height: 400px;
+			width: 48%;
+			background: tomato;
+		}
+		ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+		}
+		ul li {
+			float: left;
+		}
+		ul a {
+			display: inline-block;
+		}
+		</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Головна Сторінка</a></li>
+			<li><a href="#">Про нас</a></li>
+			<li><a href="#">Приєднатися</a></li>
+		</ul>
+	</nav>
+	<header></header>
+	<section class="main">
+		<p class="p-yellow"></p>
+		<div class="row">
+			<div class="valve-orange-box">
+			</div>
+			<div class="valve-orange-box">
+			</div>
+		</div>
+	</section>
+	<div class="pre-footer"></div>
+	<footer></footer>
+</body>
+</html>
