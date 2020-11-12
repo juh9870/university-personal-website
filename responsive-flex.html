@@ -7,33 +7,43 @@
 		/*прибираємо стандартний margins у сторінки*/
 		body {
 			margin: 0;
+			font-family: Arial;
+            height: 100%;
+
+            background: url("img/Mass.jpg") no-repeat fixed top;
+            background-size: cover;
 		}
 		nav {
-            background: lightskyblue;
-			height: 75px;
+			position: fixed;
+			top: 0;
+			width: 100%;
 		}
 		header {
-            background: url("img/bgh.jpg");
 			height: 400px;
 		}
 		.main {
+			background: #00000033;
 			margin: 75px 100px;
-			height: 500px;
-			background: gray;
-			/*Оскільки цей єлемент ає висоту 500 але містить єлементів на сумарну висоту 675 то створюемо скроллбар*/
-			overflow-y: auto;
+            text-align: center;
+			color: whitesmoke;
+		}
+		.main h1 {
+			font-size: 30pt;
 		}
 		.pre-footer {
-			background: silver;
-			height: 40px;
+			color: whitesmoke;
+			text-align: center;
+			background: #33333380;
+			padding: 10px;
 		}
 		footer{
-			height: 100px;
-			background: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 30px;
+			background: #00000080;
 		}
 		.p-yellow {
-			height: 200px;
-			background: khaki;
+			font-size: 20pt;
 			margin-bottom: 75px;
 			margin-top: 0;
 		}
@@ -42,20 +52,39 @@
 			justify-content: space-between;
 		}
 		.valve-orange-box{
-			height: 400px;
 			width: 48%;
-			background: tomato;
+			background: no-repeat;
+			background-size: 100%;
+		}
+		.valve-orange-box.left {
+			background-image: url("img/box1.jpg");
+		}
+		.valve-orange-box.right {
+            background-image: url("img/box2.jpg");
+		}
+		.valve-orange-box p {
+            margin-top: calc(100% / 1.6);
+			margin-bottom: 0;
+			padding: 10px;
+			background: #00000066;
 		}
 		ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
 		}
+		ul li:first-child {
+            float: left;
+		}
 		ul li {
-			float: left;
+            float: right;
+			background: #00000033;
 		}
 		ul a {
 			display: inline-block;
+			text-decoration: none;
+            color: whitesmoke;
+			padding: 1em;
 		}
 		</style>
 </head>
@@ -69,15 +98,20 @@
 	</nav>
 	<header></header>
 	<section class="main">
-		<p class="p-yellow"></p>
+		<h1>Lorem ipsum dolor sit amet</h1>
+		<p class="p-yellow">Consectetur adipiscing elit. Etiam mollis, purus sed eleifend imperdiet, turpis enim sagittis purus, at scelerisque nibh dui in ex. Morbi blandit orci vitae augue hendrerit, eu semper elit tempus. Duis quis nibh maximus, varius ex eget, convallis eros. Suspendisse lacinia turpis sapien, non placerat ipsum maximus eget. Donec ut elit tristique, mollis diam a, aliquam augue. Nam sodales consequat fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse vitae lectus lacus. Fusce lectus ex, congue id sagittis vitae, euismod id nisi. Etiam ac interdum orci, id placerat leo. Ut non odio placerat, eleifend dolor at, lobortis orci.</p>
 		<div class="row">
-			<div class="valve-orange-box">
+			<div class="valve-orange-box left">
+				<p>Phasellus in metus tincidunt, elementum diam fermentum, hendrerit arcu. Duis odio diam, ultrices vel molestie eget, faucibus vitae purus. Sed in varius tortor. Quisque at ante eget enim laoreet maximus ut eget mi. Proin vulputate, dui sit amet rutrum congue, turpis augue varius ipsum, a laoreet sapien risus non lectus. Sed viverra ex non vehicula egestas. Duis libero libero, rutrum et ex vitae, euismod volutpat velit. Vestibulum feugiat tellus metus, at facilisis turpis dignissim vel. Mauris et.</p>
 			</div>
-			<div class="valve-orange-box">
+			<div class="valve-orange-box right">
+				<p>Mauris et turpis magna. Pellentesque gravida porttitor dolor, non consectetur diam aliquet at. Proin eleifend felis orci, blandit sodales justo auctor non. Curabitur iaculis ipsum ante, elementum ornare dolor ultrices sagittis. Aliquam semper sapien vitae euismod tincidunt. Nam fringilla sit amet mi vitae rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum, ante sit amet tincidunt vehicula, enim mi mattis turpis, quis venenatis mauris nisi ac ipsum. Praesent lacinia mi.</p>
 			</div>
 		</div>
 	</section>
-	<div class="pre-footer"></div>
-	<footer></footer>
+	<div class="pre-footer">Donec non elit et dolor feugiat iaculis. Vestibulum pharetra, libero in luctus ornare, elit tortor lacinia tortor, at consectetur nisl est nec.</div>
+	<footer>
+		Mauris ipsum lorem, lacinia eu nulla eu, elementum semper purus. Praesent et ante nec metus porttitor porta. Cras mauris arcu, gravida ac interdum ut, eleifend ut neque.
+	</footer>
 </body>
 </html>
