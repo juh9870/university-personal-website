@@ -1,0 +1,36 @@
+body {
+    background: url("./img/Mass.jpg") no-repeat fixed top;
+    background-size: cover;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1030;
+}
+
+.bg-shadow {
+    background-color: #00000033;
+}
+
+.card {
+    width: 15em;
+}
+
+@media (max-width: 991.98px) {
+    #firstBlock {
+        background: url("./img/box3.jpg") center;
+        background-size: cover;
+    }
+
+    #firstBlock div:first-child {
+        background: #00000033;
+        color: whitesmoke;
+    }
+
+    #firstBlock div:last-child {
+        display: none;
+    }
+}

@@ -35,7 +35,7 @@ h1 {
     padding-left: 0.25em;
 }
 hr {
-    border-top: 5px dotted #565656;
+    border-top: 5px solid #565656;
 }
 .work-block{
     line-height: 1em;
