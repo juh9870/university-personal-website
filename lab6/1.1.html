@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Love calculator</title>
+</head>
+<body>
+	<script>
+		let name1 = prompt("Введіть ваше ім'я");
+		let name2 = prompt("Введіть ім'я партнера");
+
+		let hash = (name1+name2).split("").sort().reduce((a,b)=>((a<<5)-a+b.charCodeAt(0))|0,0);
+
+		let sin = Math.sin(hash)*1000000;
+		let result = Math.round((sin-Math.floor(sin))*100);
+
+		alert(`Ваша сумістність ${result}%`);
+	</script>
+</body>
+</html>
