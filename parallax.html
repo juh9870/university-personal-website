@@ -10,9 +10,14 @@
 			display: flex;
             flex-direction: column;
             align-items: center;
-
-			background: url("img/Mass.jpg") no-repeat fixed top;
-			background-size: cover;
+            background: linear-gradient(#666f,#333f,#f003), url("img/pattern.png");
+			background-size: 25%;
+		}
+		@media(min-width: 800px) {
+			body {
+                background: url("img/Mass.jpg") no-repeat fixed top;
+                background-size: cover;
+			}
 		}
 		div {
 			background-color: #00000066;

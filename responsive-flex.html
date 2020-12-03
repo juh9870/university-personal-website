@@ -47,15 +47,15 @@
 			margin-bottom: 75px;
 			margin-top: 0;
 		}
-		.row {
-			display: flex;
-			justify-content: space-between;
-		}
-		.valve-orange-box{
-			width: 48%;
-			background: no-repeat;
-			background-size: 100%;
-		}
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .valve-orange-box{
+            width: 48%;
+            background: no-repeat;
+            background-size: 100%;
+        }
 		.valve-orange-box.left {
 			background-image: url("img/box1.jpg");
 		}
@@ -68,6 +68,20 @@
 			padding: 10px;
 			background: #00000066;
 		}
+        @media (max-width: 1000px) {
+            .row {
+                flex-direction: column;
+            }
+            .valve-orange-box {
+                width: 100%;
+            }
+            .valve-orange-box:first-of-type {
+                margin-bottom: 1em;
+            }
+            .p-yellow {
+                font-size: 14pt;
+            }
+        }
 		ul {
             list-style-type: none;
             margin: 0;
