@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+	<title>Title</title>
+
+	<!-- CSS -->
+	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet">
+
+	<!-- jQuery and JS bundle w/ Popper.js -->
+	<script crossorigin="anonymous"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script crossorigin="anonymous"
+			integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+
+	<style>
+
+        .card {
+            width: 5em;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+        }
+
+        .card:hover:not(.anim) {
+            transform: scale(1.2);
+            z-index: 1;
+        }
+
+        .fadeout {
+            animation-duration: 0.5s;
+            animation-name: fadeout;
+            z-index: 1;
+			opacity: 0;
+			cursor: default;
+        }
+        .fadein {
+            animation-duration: 0.5s;
+            animation-name: fadein;
+            z-index: 1;
+        }
+
+        .header {
+            margin: 25vh 0 10vh 0;
+        }
+
+        @keyframes fadeout {
+            0% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+            80% {
+                transform: scale(2.2);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(3.2);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadein {
+            0% {
+                transform: scale(0.2);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+	</style>
+	<script src="audio.js"></script>
+</head>
+<body class="bg-light">
+	<div class="container text-center">
+		<h1 class="header">Currently playing: <span id="playing">Nothing</span></h1>
+		<div class="d-flex justify-content-around flex-wrap">
+			<div class="card text-center p-1" data-name="Bell tree">
+				<img alt="Bell tree" class="card-img-top" src="./assets/belltree.png">
+				<audio>
+					<source src="assets/belltree.mp3">
+				</audio>
+				<div class="card-body p-0">
+					<p class="card-text"><span class="text-danger font-weight-bold">B</span>ell tree</p>
+				</div>
+			</div>
+			<div class="card text-center p-1" data-name="Bongo">
+				<img alt="Bongo" class="card-img-top" src="./assets/bongo.png">
+				<audio>
+					<source src="assets/bongo.mp3">
+				</audio>
+				<div class="card-body p-0">
+					<p class="card-text">B<span class="text-danger font-weight-bold">o</span>ngo</p>
+				</div>
+			</div>
+			<div class="card text-center p-1" data-name="Bugle">
+				<img alt="Bugle" class="card-img-top" src="./assets/bugle.png">
+				<audio>
+					<source src="assets/bugle.mp3">
+				</audio>
+				<div class="card-body p-0">
+					<p class="card-text">B<span class="text-danger font-weight-bold">u</span>gle</p>
+				</div>
+			</div>
+			<div class="card text-center p-1" data-name="Cabasa">
+				<img alt="Cabasa" class="card-img-top" src="./assets/cabasa.png">
+				<audio>
+					<source src="assets/cabasa.mp3">
+				</audio>
+				<div class="card-body p-0">
+					<p class="card-text"><span class="text-danger font-weight-bold">C</span>abasa</p>
+				</div>
+			</div>
+			<div class="card text-center p-1" data-name="Calliope">
+				<img alt="Calliope" class="card-img-top" src="./assets/calliope.png">
+				<audio>
+					<source src="assets/calliope.mp3">
+				</audio>
+				<div class="card-body p-0">
+					<p class="card-text">C<span class="text-danger font-weight-bold">a</span>lliope</p>
+				</div>
+			</div>
+			<div class="card text-center p-1" data-name="Harp">
+				<img alt="Harp" class="card-img-top" src="./assets/harp.png">
+				<audio>
+					<source src="assets/harp.mp3">
+				</audio>
+				<div class="card-body p-0">
+					<p class="card-text"><span class="text-danger font-weight-bold">H</span>arp</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
